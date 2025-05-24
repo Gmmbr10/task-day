@@ -28,8 +28,8 @@ git clone https://github.com/Gmmbr10/task-day.git
 ## 🤝 Colaboradores
 
 <a href="https://github.com/Gmmbr10" title="Github do Giovanne Monteiro">
-    <img src="https://github.com/Gmmbr10.png" width="100px;" alt="Foto do Giovanne Monteiro"/><br>
+    <img src="https://github.com/Gmmbr10.png" width="150px;" alt="Foto do Giovanne Monteiro"/><br>
     <sub>
         <b>Giovanne Monteiro</b>
     </sub>
-    </a>
+</a>
