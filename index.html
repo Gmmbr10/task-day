@@ -13,12 +13,12 @@
     <main class="max-w-[500px] w-full mx-auto grid gap-5">
         <form name="task_register" onsubmit="return false;" class="bg-zinc-900 p-5 rounded-xl grid gap-5.5">
             <h2 class="font-bold text-lg">Task Register</h2>
-            <article class="grid gap-2.5">
+            <section class="grid gap-2.5">
                 <label for="task" class="font-bold">Tarefa</label>
                 <input type="text" name="task" id="task" placeholder="Ex: Estudar"
                     class="bg-zinc-800 rounded p-2.5 outline-1 outline-zinc-500 placeholder:text-zinc-500 duration-200 text-zinc-400 focus:text-white focus:outline-white">
-            </article>
-            <article class="grid gap-2.5">
+            </section>
+            <section class="grid gap-2.5">
                 <p class="font-bold">É urgente?</p>
                 <section class="flex justify-between">
                     <label class="flex gap-2.5 cursor-pointer">
@@ -43,8 +43,8 @@
                         Não
                     </label>
                 </section>
-            </article>
-            <article class="grid gap-2.5">
+            </section>
+            <section class="grid gap-2.5">
                 <p class="font-bold">É importante?</p>
                 <section class="flex justify-between">
                     <label class="flex gap-2.5 cursor-pointer">
@@ -69,16 +69,16 @@
                         Não
                     </label>
                 </section>
-            </article>
+            </section>
             <button class="bg-blue-900 font-bold text-base p-2.5 rounded-lg cursor-pointer hover:bg-blue-800"
                 onclick="registrar()">Adicionar</button>
         </form>
 
         <section class="bg-zinc-900 p-5 rounded-xl grid gap-5.5">
-            <div class="flex justify-between items-center">
+            <section class="flex justify-between items-center">
                 <h2 class="font-bold text-lg">Tasks</h2>
                 <button onclick="limpar()" class="bg-red-900 font-bold text-white py-2 px-4 rounded-lg inline-block cursor-pointer duration-200 hover:bg-red-700">Limpar</button>
-            </div>
+            </section>
             <section id="tasks" class="grid gap-2.5">
                 <p class="flex gap-2.5 p-2.5 items-center bg-zinc-800 rounded-lg">Nenhuma tarefa registrada até o
                     momento</p>
