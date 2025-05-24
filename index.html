@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Day</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body class="bg-zinc-950 text-white py-10 px-7.5 grid gap-10">
+    <h2 class="font-bold text-2xl text-center">Task Day</h2>
+    <main class="max-w-[500px] w-full mx-auto grid gap-5">
+        <form name="task_register" onsubmit="return false;" class="bg-zinc-900 p-5 rounded-xl grid gap-5.5">
+            <h2 class="font-bold text-lg">Task Register</h2>
+            <article class="grid gap-2.5">
+                <label for="task" class="font-bold">Tarefa</label>
+                <input type="text" name="task" id="task" placeholder="Ex: Estudar"
+                    class="bg-zinc-800 rounded p-2.5 outline-1 outline-zinc-500 placeholder:text-zinc-500 duration-200 text-zinc-400 focus:text-white focus:outline-white">
+            </article>
+            <article class="grid gap-2.5">
+                <p class="font-bold">É urgente?</p>
+                <section class="flex justify-between">
+                    <label class="flex gap-2.5 cursor-pointer">
+                        <input type="radio" name="urgent" value="5" class="peer hidden">
+                        <div
+                            class="w-5 h-5 border-2 border-zinc-500 peer-checked:border-blue-500 peer-checked:bg-blue-500 transition-colors rounded-sm">
+                        </div>
+                        Sim
+                    </label>
+                    <label class="flex gap-2.5 cursor-pointer">
+                        <input type="radio" name="urgent" value="3" checked class="peer hidden">
+                        <div
+                            class="w-5 h-5 border-2 border-zinc-500 peer-checked:border-blue-500 peer-checked:bg-blue-500 transition-colors rounded-sm">
+                        </div>
+                        Mais ou menos
+                    </label>
+                    <label class="flex gap-2.5 cursor-pointer">
+                        <input type="radio" name="urgent" value="1" class="peer hidden">
+                        <div
+                            class="w-5 h-5 border-2 border-zinc-500 peer-checked:border-blue-500 peer-checked:bg-blue-500 transition-colors rounded-sm">
+                        </div>
+                        Não
+                    </label>
+                </section>
+            </article>
+            <article class="grid gap-2.5">
+                <p class="font-bold">É importante?</p>
+                <section class="flex justify-between">
+                    <label class="flex gap-2.5 cursor-pointer">
+                        <input type="radio" name="important" value="5" class="peer hidden">
+                        <div
+                            class="w-5 h-5 border-2 border-zinc-500 peer-checked:border-blue-500 peer-checked:bg-blue-500 transition-colors rounded-sm">
+                        </div>
+                        Sim
+                    </label>
+                    <label class="flex gap-2.5 cursor-pointer">
+                        <input type="radio" name="important" value="3" checked class="peer hidden">
+                        <div
+                            class="w-5 h-5 border-2 border-zinc-500 peer-checked:border-blue-500 peer-checked:bg-blue-500 transition-colors rounded-sm">
+                        </div>
+                        Mais ou menos
+                    </label>
+                    <label class="flex gap-2.5 cursor-pointer">
+                        <input type="radio" name="important" value="1" class="peer hidden">
+                        <div
+                            class="w-5 h-5 border-2 border-zinc-500 peer-checked:border-blue-500 peer-checked:bg-blue-500 transition-colors rounded-sm">
+                        </div>
+                        Não
+                    </label>
+                </section>
+            </article>
+            <button class="bg-blue-900 font-bold text-base p-2.5 rounded-lg cursor-pointer hover:bg-blue-800"
+                onclick="registrar()">Adicionar</button>
+        </form>
+
+        <section class="bg-zinc-900 p-5 rounded-xl grid gap-5.5">
+            <div class="flex justify-between items-center">
+                <h2 class="font-bold text-lg">Tasks</h2>
+                <button onclick="limpar()" class="bg-red-900 font-bold text-white py-2 px-4 rounded-lg inline-block cursor-pointer duration-200 hover:bg-red-700">Limpar</button>
+            </div>
+            <section id="tasks" class="grid gap-2.5">
+                <p class="flex gap-2.5 p-2.5 items-center bg-zinc-800 rounded-lg">Nenhuma tarefa registrada até o
+                    momento</p>
+            </section>
+        </section>
+    </main>
+
+    <script src="./src/scripts/task.js"></script>
+</body>
+
+</html>
