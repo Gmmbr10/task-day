@@ -7,6 +7,15 @@ O Task Day é uma plataforma de registrar tarefas no dispositivo.
 
 O sistema surgiu da necessidade de automatizar um sistema de tarefas com diferentes prioridades.
 
+## 📈 Como é medida a prioridade?
+
+A prioridade é o produto da urgência com a importância.
+Elas são definidas ao criar a tarefa sendo:
+
+- Sim - 5
+- Mais ou menos - 3
+- Não - 1
+
 ## 🚀 Tecnologias
 
 - HTML
@@ -14,6 +23,10 @@ O sistema surgiu da necessidade de automatizar um sistema de tarefas com diferen
 - TailwindCSs
 
 ## ☕ Como usar?
+
+Entre no link <a href="https://gmmbr10.github.io/task-day" target="_blank">https://gmmbr10.github.io/task-day</a>
+
+### 🖥️ Usando no dispositivo local
 
 1. Clone o projeto:
 
